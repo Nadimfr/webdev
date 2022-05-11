@@ -1,0 +1,700 @@
+@import "/src/theme/color.scss";
+@import "/src/theme/variables.scss";
+
+.Order_details {
+  margin: 2% 5%;
+  .Title {
+    font-size: 26px;
+    font-weight: 500;
+    color: $primary_color;
+    margin-bottom: 2%;
+  }
+
+  .Items_summary {
+    .First_row {
+      width: 100%;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      .Title {
+        white-space: nowrap;
+        font-size: 20px;
+        font-weight: 500;
+        color: $primary_color;
+      }
+      .Status {
+        width: 200px;
+        height: 35px;
+        border: 1px solid $primary_color;
+        border-radius: 5px;
+      }
+    }
+    .Table_titles {
+      padding: 0 10% 0 3%;
+      margin-bottom: 1%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 50px;
+      font-weight: 500;
+      box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+
+      .Column_title {
+        font-weight: 500;
+      }
+    }
+
+    .accordion {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      left: 100px;
+      top: 483.46px;
+      background: $white;
+      box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .accordion-opened {
+        svg {
+          transform: rotate(180deg);
+          transition-duration: 500ms;
+        }
+      }
+      .Collapsible {
+        width: 100%;
+      }
+      .Collapsible__trigger {
+        width: 100%;
+      }
+      .accordion_list_wrapper {
+        @media only screen and (max-width: 900px) {
+          justify-content: space-between;
+          display: flex;
+        }
+      }
+      .accordion_list.list1 {
+        @media only screen and (min-width: 901px) {
+          display: none;
+        }
+        max-width: calc(100% - 80px);
+        span {
+          padding: 5px 0px;
+          @media only screen and (max-width: 400px) {
+            font-size: 14px !important;
+          }
+        }
+      }
+      .accordion_list.list2 {
+        @media only screen and (max-width: 900px) {
+          flex-direction: column;
+          align-items: flex-end;
+        }
+        span {
+          padding: 5px 0px;
+          @media only screen and (max-width: 400px) {
+            font-size: 14px !important;
+          }
+        }
+      }
+      @media only screen and (max-width: 900px) {
+        .accordion_list.list1 {
+          padding-right: 0px !important;
+          position: absolute;
+        }
+        .accordion_list.list2 {
+          padding-left: 0px !important;
+        }
+      }
+      .accordion_list {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 15px 35px;
+        white-space: nowrap;
+        @media only screen and (max-width: 900px) {
+          span {
+            font-style: normal;
+            font-size: 14px;
+            line-height: 16px;
+            display: flex;
+            align-items: center;
+            color: $black;
+          }
+          .sale_number,
+          .barcode,
+          .date,
+          .price,
+          .delivery_status,
+          .order_status {
+            font-size: 14px;
+            line-height: 16px;
+          }
+        }
+        @media only screen and (min-width: 901px) {
+          span {
+            white-space: nowrap;
+            text-align: left;
+            flex: 1;
+            font-style: normal;
+            font-weight: 500;
+            @include font-size20();
+            line-height: 33px;
+            display: flex;
+            color: $black;
+          }
+          span.header-title {
+            @include font-size22();
+          }
+          .sale_number {
+            line-height: 28px;
+            display: flex;
+            color: $primary-color;
+          }
+          .barcode {
+            line-height: 28px;
+            display: flex;
+            color: $black;
+          }
+          .date {
+            line-height: 28px;
+            display: flex;
+            color: $grey;
+          }
+          .price {
+            line-height: 28px;
+            display: flex;
+            color: $black;
+          }
+          .delivery_status {
+            line-height: 28px;
+            display: flex;
+            color: $black;
+          }
+          .order_status {
+            line-height: 28px;
+            display: flex;
+            color: $black;
+          }
+        }
+        @media only screen and (max-width: 450px) {
+          padding: 15px 10px;
+        }
+
+        .approved_sn {
+          display: flex;
+          flex-direction: column;
+          align-items: baseline;
+          span {
+            white-space: nowrap;
+            padding: 12px 0px;
+            @media only screen and (max-width: 400px) {
+              font-size: 14px !important;
+            }
+          }
+          .phone-name {
+            font-style: normal;
+            font-weight: 500;
+            @include font-size();
+            line-height: 33px;
+            display: flex;
+            align-items: center;
+            color: $primary-color !important;
+            @media only screen and (max-width: 400px) {
+              font-size: 14px !important;
+            }
+          }
+          .offered_value {
+            font-style: normal;
+            font-weight: 500;
+            @include font-size20();
+            line-height: 28px;
+            display: flex;
+            align-items: center;
+            color: $black;
+            @media only screen and (max-width: 400px) {
+              font-size: 14px !important;
+            }
+          }
+          .estimated_value,
+          .shipping {
+            font-style: normal;
+            font-weight: 500;
+            @include font-size20();
+            line-height: 28px;
+            display: flex;
+            align-items: center;
+            color: $grey;
+            @media only screen and (max-width: 400px) {
+              font-size: 14px !important;
+            }
+          }
+          .total {
+            font-style: normal;
+            font-weight: 500;
+            @include font-size();
+            line-height: 33px;
+            display: flex;
+            align-items: center;
+            color: $primary-color;
+            @media only screen and (max-width: 400px) {
+              font-size: 14px !important;
+            }
+          }
+        }
+        .mobile_delivery_status,
+        .mobile_order_status,
+        .mobile_order_status {
+          @media only screen and (min-width: 901px) {
+            display: none !important;
+          }
+        }
+        .desktop_delivery_status,
+        .desktop_order_status,
+        .desktop_order_status {
+          @media only screen and (max-width: 900px) {
+            display: none !important;
+          }
+        }
+
+        .pending_sn {
+          display: flex;
+          flex-direction: column;
+          align-items: baseline;
+          margin-right: 10px;
+          span {
+            white-space: nowrap;
+            padding: 12px 0px;
+            width: 100%;
+            @media only screen and (max-width: 400px) {
+              font-size: 14px !important;
+            }
+          }
+          .phone-name {
+            font-style: normal;
+            font-weight: 500;
+            @include font-size();
+            line-height: 30px;
+            display: flex;
+            align-items: center;
+            color: $primary-color !important;
+            @media only screen and (max-width: 400px) {
+              font-size: 14px !important;
+            }
+          }
+          .offered_value {
+            font-style: normal;
+            font-weight: 500;
+            @include font-size20();
+            line-height: 28px;
+            display: flex;
+            align-items: center;
+            color: $black;
+            @media only screen and (max-width: 400px) {
+              font-size: 14px !important;
+            }
+          }
+          .estimated_value,
+          .shipping {
+            font-style: normal;
+            font-weight: 500;
+            @include font-size20();
+            line-height: 28px;
+            display: flex;
+            align-items: center;
+            color: $grey;
+            @media only screen and (max-width: 400px) {
+              font-size: 14px !important;
+            }
+          }
+          .total {
+            font-style: normal;
+            font-weight: 500;
+            @include font-size();
+            line-height: 33px;
+            display: flex;
+            align-items: center;
+            color: $primary-color;
+            @media only screen and (max-width: 400px) {
+              font-size: 14px !important;
+            }
+          }
+          .reject {
+            cursor: pointer;
+            border: 1px solid $primary-color;
+            box-sizing: border-box;
+            border-radius: 50px;
+            justify-content: center;
+            // flex-grow: 0 !important;
+
+            font-style: normal;
+            font-weight: bold;
+            @include font-size();
+            line-height: 33px;
+            color: $primary-color;
+            margin-right: 15px;
+          }
+          .accept {
+            cursor: pointer;
+            background: $primary-color;
+            border-radius: 50px;
+
+            font-style: normal;
+            font-weight: bold;
+            @include font-size();
+            line-height: 33px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: $white;
+            justify-content: center;
+            margin-left: 15px;
+          }
+        }
+        .pending_sn {
+          flex: 1;
+        }
+        .pending_sn.a {
+          flex: 3;
+          .accept,
+          .reject {
+            @media only screen and (max-width: 900px) {
+              display: none !important;
+            }
+          }
+        }
+        .pending_sn.b {
+          position: relative;
+          .accept,
+          .reject {
+            padding: 8px 0px;
+            width: 100px;
+            position: absolute;
+            @media only screen and (min-width: 901px) {
+              display: none !important;
+            }
+          }
+          .accept {
+            margin-left: 120px;
+          }
+        }
+
+        .rejected_sn {
+          display: flex;
+          flex-direction: column;
+          align-items: baseline;
+          span {
+            white-space: nowrap;
+            padding: 12px 0px;
+          }
+          .phone-name {
+            font-style: normal;
+            font-weight: 500;
+            @include font-size();
+            line-height: 33px;
+            display: flex;
+            align-items: center;
+            color: $primary-color !important;
+          }
+          .offered_value {
+            font-style: normal;
+            font-weight: 500;
+            @include font-size22();
+            line-height: 28px;
+            display: flex;
+            align-items: center;
+
+            color: $black;
+          }
+          .estimated_value,
+          .shipping {
+            font-style: normal;
+            font-weight: 500;
+            @include font-size22();
+            line-height: 28px;
+            display: flex;
+            align-items: center;
+            color: $grey;
+          }
+          .total {
+            font-style: normal;
+            font-weight: 500;
+            @include font-size();
+            line-height: 33px;
+
+            display: flex;
+            align-items: center;
+
+            color: $primary-color;
+          }
+        }
+        .mobile_delivery_status,
+        .mobile_order_status,
+        .mobile_order_status {
+          @media only screen and (min-width: 901px) {
+            display: none !important;
+          }
+        }
+        .desktop_delivery_status,
+        .desktop_order_status,
+        .desktop_order_status {
+          @media only screen and (max-width: 900px) {
+            display: none !important;
+          }
+        }
+        @media only screen and (max-width: 900px) {
+          svg {
+            display: none;
+          }
+        }
+      }
+      .mobile_svg {
+        display: flex;
+        margin: auto;
+        margin-bottom: 9px;
+        width: 14px;
+        height: 7px;
+      }
+      @media only screen and (min-width: 901px) {
+        .mobile_svg {
+          display: none;
+        }
+      }
+
+      .pending_sn.b {
+        .accept,
+        .reject {
+          display: flex;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          width: 140px;
+          height: 46px;
+          @media only screen and (min-width: 901px) {
+            display: none !important;
+          }
+        }
+        .reject {
+          cursor: pointer;
+          border: 1px solid $primary-color;
+          box-sizing: border-box;
+          border-radius: 50px;
+          // flex-grow: 0 !important;
+
+          font-style: normal;
+          font-weight: bold;
+          @include font-size();
+          line-height: 33px;
+          color: $primary-color;
+          margin-right: 15px;
+        }
+        .accept {
+          cursor: pointer;
+          background: $primary-color;
+          border-radius: 50px;
+
+          font-style: normal;
+          font-weight: bold;
+          @include font-size();
+          line-height: 33px;
+          color: $white;
+          margin-left: 15px;
+        }
+      }
+    }
+
+    .Results {
+      .Table_results {
+        padding: 0 10% 0 3%;
+        margin-bottom: 1%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  .Details_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    .Details {
+      width: 50%;
+      .Title {
+        margin-bottom: 2%;
+        margin-top: 10%;
+        white-space: nowrap;
+        font-size: 20px;
+        font-weight: 500;
+        color: $primary_color;
+      }
+      .Info {
+        padding: 2% 5%;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+        .Sub_row {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 2%;
+          font-size: 17px;
+          .Left {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .Summary {
+      width: 50%;
+      .Title {
+        margin-bottom: 2%;
+        margin-top: 10%;
+        white-space: nowrap;
+        font-size: 20px;
+        font-weight: 500;
+        color: $primary_color;
+      }
+      .Info {
+        padding: 2% 5%;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+        .Sub_row {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 2%;
+          font-size: 17px;
+          .Left {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+
+  .Delivery_row {
+    margin-top: 3%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 100px;
+    .Left_column {
+      width: 50%;
+      .Title {
+        white-space: nowrap;
+        font-size: 20px;
+        font-weight: 500;
+        color: $primary_color;
+      }
+      .Delivery_address {
+        .Info {
+          padding: 2% 5%;
+          box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+          .Sub_row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2%;
+            font-size: 17px;
+            .Left {
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+    .Total {
+      margin-top: 2.3%;
+      height: 30px;
+      width: 50%;
+      padding: 2%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+
+      .Total_title {
+        font-weight: 500;
+        color: $primary_color;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Order_details {
+    margin: 5% 5%;
+    .Items_summary {
+      .First_row {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .Status {
+          margin: 3% 0;
+          height: 30px;
+          width: 100%;
+        }
+      }
+
+      .Table_titles {
+        height: 30px;
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      .Results {
+        .Table_results {
+          height: 30px;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .Details_row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+
+      .Details {
+        width: 100%;
+        .Info {
+          .Sub_row {
+            font-size: 12px;
+          }
+        }
+      }
+      .Summary {
+        width: 100%;
+        .Info {
+          font-size: 12px;
+        }
+        .Title {
+          margin-top: 0;
+        }
+      }
+    }
+
+    .Delivery_row {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 50px;
+
+      .Left_column {
+        width: 100%;
+
+        .Info {
+          font-size: 12px;
+        }
+      }
+
+      .Total {
+        width: 100%;
+        font-size: 12px;
+      }
+    }
+  }
+}

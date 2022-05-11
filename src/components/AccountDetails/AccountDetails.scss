@@ -1,0 +1,130 @@
+@import "/src/theme/variables.scss";
+@import "/src/theme/color.scss";
+.account_details {
+  max-width: 1142px;
+  max-height: 607px;
+  margin: auto;
+  @media screen and (max-width: 501px) {
+    display: none;
+  }
+  .title {
+    font-size: 38px;
+    color: $primary-color;
+
+    @media only screen and (max-width: 1300px) {
+      font-size: 32px;
+    }
+    @media only screen and (max-width: 1000px) {
+      font-size: 22px;
+    }
+    @media only screen and (max-width: 900px) {
+      font-size: 18px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+      color: $primary-color;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .title.desktop {
+      display: none;
+    }
+    .title.mobile {
+      margin-left: 20px;
+    }
+  }
+  @media only screen and (min-width: 901px) {
+    .title.mobile {
+      display: none !important;
+    }
+  }
+  .account_details_details_container {
+    background: $white;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    @media only screen and (max-width: 900px) {
+      border-radius: 0px;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 35px 65px 0 65px;
+      border-bottom: 2px solid $grey;
+      margin-top: 50px;
+      @media only screen and (max-width: 1500px) {
+        margin-top: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      @media only screen and (max-width: 1300px) {
+        margin-top: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+      @media only screen and (max-width: 1000px) {
+        margin-top: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      @media only screen and (max-width: 900px) {
+        padding-top: 10px;
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .link {
+        padding-bottom: 10px;
+        margin-bottom: -2px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0);
+        @media only screen and (max-width: 1500px) {
+          padding-bottom: 8px;
+        }
+        @media only screen and (max-width: 1300px) {
+          padding-bottom: 6px;
+        }
+        @media only screen and (max-width: 1000px) {
+          padding-bottom: 4px;
+        }
+        @media only screen and (max-width: 900px) {
+          padding-bottom: 2px;
+        }
+        @include font-size22();
+        @media only screen and (max-width: 500px) {
+          font-size: 10px;
+          padding-bottom: 0px;
+        }
+        color: $grey;
+      }
+      .link.active {
+        border-bottom: 2px solid $primary-color;
+        color: $primary-color;
+      }
+    }
+    .content {
+      padding-left: 65px;
+      padding-right: 65px;
+      @media only screen and (max-width: 1500px) {
+        padding-left: 55px;
+        padding-right: 55px;
+      }
+      @media only screen and (max-width: 1300px) {
+        padding-left: 48px;
+        padding-right: 48px;
+      }
+      @media only screen and (max-width: 1000px) {
+        padding-left: 38px;
+        padding-right: 38px;
+      }
+      @media only screen and (max-width: 900px) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .Responsive {
+    display: none;
+  }
+}

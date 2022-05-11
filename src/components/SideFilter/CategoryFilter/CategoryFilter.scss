@@ -1,0 +1,74 @@
+@import "/src/theme/color.scss";
+
+.filter-category {
+  width: 90%;
+  margin: 0% auto;
+  height: fit-content;
+  margin-bottom: 5%;
+  .search {
+    display: flex;
+    font-size: 16px;
+    .search-icon {
+      border-bottom: 1px solid #a8a8a8;
+      padding-bottom: 1%;
+    }
+    input {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid #a8a8a8;
+      outline: none;
+      width: 100%;
+    }
+  }
+  .filter-category-title {
+    font-size: 25px;
+    color: $primary-color;
+  }
+  //circle
+  .MuiSlider-thumbColorPrimary.MuiSlider-thumbSizeMedium.MuiSlider-thumb.css-eg0mwd-MuiSlider-thumb {
+    color: white;
+    border: 1px solid $primary-color;
+  }
+  //line outside the 2 circles
+  .MuiSlider-rail.css-14pt78w-MuiSlider-rail {
+    opacity: 1;
+    color: #a8a8a8;
+  }
+  //line between the 2 circles
+  .MuiSlider-track.css-1gv0vcd-MuiSlider-track {
+    color: $primary-color;
+  }
+
+  //hovering circle
+  .MuiSlider-thumbColorPrimary.MuiSlider-thumbSizeMedium.MuiSlider-thumb.css-eg0mwd-MuiSlider-thumb {
+    &:hover {
+      box-shadow: 0px 0px 0px 8px #4ba4f04d;
+      &:focus-within {
+        box-shadow: 0px 0px 0px 8px #4ba4f04d;
+      }
+    }
+
+    &:active {
+      box-shadow: 0px 0px 0px 14px #4ba4f04d;
+    }
+  }
+
+  .checkbox-container {
+    display: flex;
+    flex-direction: column;
+    .MuiFormControlLabel-root.MuiFormControlLabel-labelPlacementRight.css-j204z7-MuiFormControlLabel-root {
+      width: fit-content;
+    }
+  }
+}
+.showMore {
+  color: gray;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.none {
+  display: none !important;
+}

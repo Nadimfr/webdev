@@ -1,0 +1,100 @@
+@import "../../theme/color.scss";
+
+.Logout {
+  margin: -3vw;
+  padding: 0px;
+  align-items: center;
+  justify-content: center;
+  .Box {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 50px 50px;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
+
+    .Title {
+      margin-top: 20px;
+      font-size: 26px;
+    }
+
+    .Buttons {
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      width: 100%;
+      text-decoration: none;
+
+      .Button_1 {
+        padding: 1% 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        border: solid 1px $primary_color;
+        border-radius: 20px;
+        color: $primary_color;
+        font-weight: 500;
+        background-color: white;
+      }
+
+      .Button_1:hover {
+        border: 2px solid $primary_color;
+      }
+
+      .Button_2:hover {
+        border: 2px solid $primary_color;
+      }
+
+      .Button_2 {
+        padding: 1% 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        border: solid 1px $primary_color;
+        border-radius: 20px;
+        background-color: $primary_color;
+
+        a {
+          text-decoration: none;
+          font-weight: 500;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Logout {
+    margin: 50% 5%;
+
+    .Box {
+      .Title {
+        font-size: 24px;
+        text-align: center;
+      }
+
+      .Buttons {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+
+        .Button_1 {
+          width: 100%;
+        }
+
+        .Button_2 {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

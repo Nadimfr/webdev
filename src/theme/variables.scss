@@ -1,0 +1,163 @@
+$border-radius: "5px";
+
+@mixin font-size() {
+  font-size: 28px;
+  @media only screen and (min-width: 1501px) {
+    font-size: 28px;
+  }
+
+  @media only screen and (max-width: 1500px) {
+    font-size: 24px;
+    svg {
+      width: 24px;
+    }
+  }
+  @media only screen and (max-width: 1300px) {
+    font-size: 20px;
+    svg {
+      width: 20px;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    font-size: 16px;
+    svg {
+      width: 16px;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    font-size: 18px;
+    svg {
+      width: 18px;
+    }
+  }
+}
+
+@mixin font-size24() {
+  font-size: 24px !important;
+  @media only screen and (min-width: 1501px) {
+    font-size: 24px !important;
+  }
+
+  @media only screen and (max-width: 1500px) {
+    font-size: 20px !important;
+    svg {
+      width: 20px !important;
+    }
+  }
+  @media only screen and (max-width: 1300px) {
+    font-size: 16px !important;
+    svg {
+      width: 16px !important;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    font-size: 16px !important;
+    svg {
+      width: 16px !important;
+    }
+  }
+}
+
+@mixin font-size22() {
+  font-size: 22px !important;
+  @media only screen and (min-width: 1501px) {
+    font-size: 22px !important;
+  }
+
+  @media only screen and (max-width: 1500px) {
+    font-size: 18px !important;
+    svg {
+      width: 18px !important;
+    }
+  }
+  @media only screen and (max-width: 1300px) {
+    font-size: 16px !important;
+    svg {
+      width: 16px !important;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    font-size: 16px !important;
+    svg {
+      width: 14px !important;
+    }
+  }
+}
+
+@mixin font-size20() {
+  font-size: 20px !important;
+  @media only screen and (min-width: 1501px) {
+    font-size: 20px !important;
+  }
+
+  @media only screen and (max-width: 1500px) {
+    font-size: 18px !important;
+    svg {
+      width: 18px !important;
+    }
+  }
+  @media only screen and (max-width: 1300px) {
+    font-size: 17px !important;
+    svg {
+      width: 17px !important;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    font-size: 17px !important;
+    svg {
+      width: 17px !important;
+    }
+  }
+}
+
+@mixin font-size18() {
+  font-size: 18px !important;
+  @media only screen and (min-width: 1501px) {
+    font-size: 18px !important;
+  }
+
+  @media only screen and (max-width: 1500px) {
+    font-size: 16px !important;
+    svg {
+      width: 16px !important;
+    }
+  }
+  @media only screen and (max-width: 1300px) {
+    font-size: 16px !important;
+    svg {
+      width: 16px !important;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    font-size: 16px !important;
+    svg {
+      width: 16px !important;
+    }
+  }
+}
+
+@mixin accept-reject() {
+  @media only screen and (min-width: 1501px) {
+    padding: 12px 0px;
+  }
+
+  @media only screen and (max-width: 1500px) {
+    padding: 10px 0px;
+  }
+  @media only screen and (max-width: 1300px) {
+    padding: 8px 0px;
+  }
+  @media only screen and (max-width: 1000px) {
+    padding: 6px 0px;
+  }
+  @media only screen and (max-width: 1000px) {
+    padding: 6px 0px;
+  }
+}
+.text-align-start {
+  text-align: start;
+}
+
+.h2 {
+  font-size: 35px;
+}

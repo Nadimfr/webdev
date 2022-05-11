@@ -1,0 +1,274 @@
+@import "/src/theme/variables.scss";
+@import "/src/theme/color.scss";
+.add {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 2%;
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
+  .radio {
+    width: 5%;
+    @media only screen and (max-width: 600px) {
+      width: 9%;
+    }
+  }
+  div {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .address_info {
+    .field {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 30px;
+      .first-label-contaienr {
+        display: flex;
+        .label-svg {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          svg {
+            cursor: pointer;
+            margin-top: 10px;
+            width: 18px;
+            height: 23px;
+            @media only screen and (max-width: 1500px) {
+              margin-top: 13px;
+              width: 16px;
+              height: 20px;
+            }
+            @media only screen and (max-width: 1300px) {
+              margin-top: 15px;
+              width: 14px;
+              height: 18px;
+            }
+            @media only screen and (max-width: 1000px) {
+              margin-top: 18px;
+              width: 12px;
+              height: 15px;
+            }
+          }
+        }
+      }
+      // .MuiButtonBase-root.MuiListItem-root.MuiMenuItem-root.menue-item.MuiMenuItem-gutters.MuiListItem-gutters.MuiListItem-button {
+      //   // padding-right: 0px;
+      //   padding-left: 0px;
+      //   // width: 28px;
+      //   // margin-left: -28px;
+      //   // @media only screen and (max-width: 1300px) {
+      //   //     width: 23px;
+      //   //     margin-left: -23px;
+      //   // }
+      //   margin-left: -23px;
+      //   @media only screen and (max-width: 1300px) {
+      //     margin-left: -20px;
+      //   }
+      //   .MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1 {
+      //     @include font-size24();
+      //     margin-left: -7px;
+      //   }
+      // }
+      @media only screen and (max-width: 1500px) {
+        margin-top: 28px;
+      }
+      @media only screen and (max-width: 1300px) {
+        margin-top: 25px;
+      }
+      @media only screen and (max-width: 1000px) {
+        margin-top: 22px;
+      }
+      @media only screen and (max-width: 900px) {
+        margin-top: 20px;
+      }
+      label {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        @include font-size24();
+        display: flex;
+        align-items: center;
+
+        color: #000000;
+        padding-bottom: 10px;
+        @media only screen and (max-width: 1500px) {
+          padding-bottom: 8px;
+        }
+        @media only screen and (max-width: 1300px) {
+          padding-bottom: 6px;
+        }
+        @media only screen and (max-width: 1000px) {
+          padding-bottom: 4px;
+        }
+        @media only screen and (max-width: 900px) {
+          padding-bottom: 2px;
+        }
+      }
+      input {
+        width: 100%;
+        @media only screen and (max-width: 900px) {
+          width: 100%;
+        }
+
+        background-color: transparent;
+        outline: none;
+        outline-style: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: solid $black 1px;
+        // padding: 3px 10px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        @include font-size();
+        line-height: 33px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+
+        // color: $border-grey;
+      }
+      .MuiFormControl-root {
+        margin: 0px;
+      }
+    }
+    @media only screen and (min-width: 901px) {
+      .field.expiry_date {
+        width: 50%;
+      }
+    }
+    .code_expiry-date {
+      display: flex;
+      justify-content: space-between;
+      // align-items: end;
+      @media only screen and (max-width: 900px) {
+        flex-direction: column;
+      }
+      .field {
+        @media only screen and (min-width: 901px) {
+          width: 50%;
+          padding-right: 20px;
+        }
+      }
+      .code {
+        input {
+          width: 50%;
+        }
+      }
+      .expiry_contact_number {
+        input {
+          width: 350px;
+        }
+      }
+      @media only screen and (max-width: 900px) {
+        width: 100%;
+        .field.code {
+          width: 30%;
+          label {
+            width: 100%;
+          }
+          input {
+            width: 100%;
+          }
+        }
+        .field.expiry_contact_number {
+          width: 60%;
+          label {
+            width: 100%;
+          }
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .add_new_cart_container {
+      display: flex;
+      margin-top: 15px;
+      cursor: pointer;
+      width: fit-content;
+      padding-bottom: 36px;
+      margin-left: 5%;
+
+      @media only screen and (max-width: 900px) {
+        padding-top: 20px;
+      }
+      svg {
+        width: 30px;
+        height: 30px;
+        @media only screen and (max-width: 1500px) {
+          width: 38px;
+          height: 38px;
+        }
+        @media only screen and (max-width: 1300px) {
+          width: 32px;
+          height: 32px;
+        }
+        @media only screen and (max-width: 1000px) {
+          width: 26px;
+          height: 26px;
+        }
+        @media only screen and (max-width: 900px) {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .add_new_cart {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        @include font-size20();
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+
+        color: $primary-color;
+        margin-left: 20px;
+      }
+    }
+    .add_new_cart_container:hover {
+      svg path {
+        fill: black;
+      }
+      .add_new_cart {
+        color: #000000;
+      }
+    }
+  }
+}
+// .MuiInput-root {
+//   font-size: unset !important ;
+// }
+// .MuiInputLabel-root.Mui-focused {
+//   color: $primary-color !important;
+// }
+// .MuiFormControl-root {
+//   @include font-size22();
+// }
+// .grey-text {
+//   .MuiSelect-select.MuiSelect-standard.MuiInput-input.MuiInputBase-input {
+//     // color: #757575;
+//     font-weight: 300;
+//   }
+// }
+
+// .MuiButtonBase-root.MuiIconButton-root {
+//   width: 42px;
+// }
+.justify-content-center {
+  width: 100%;
+}
+.trash {
+  display: flex;
+  justify-content: space-between;
+}
+.form-label {
+  @include font-size22();
+}

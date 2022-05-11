@@ -1,0 +1,28 @@
+.loginBtn {
+  background-color: $primary-color;
+  color: white;
+  border-color: $primary-color;
+  border-radius: 15px;
+}
+
+.placeorder {
+  background-color: $primary-color;
+  color: white;
+  border-color: $primary-color;
+  border-radius: 20px;
+  width: 250px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 25px;
+}
+.btn-primary:hover {
+  color: $primary-color;
+  background-color: white !important;
+  border-color: $primary-color !important;
+}
+.btn-primary:focus {
+  color: $primary-color !important;
+  background-color: white !important;
+  border-color: $primary-color !important;
+  box-shadow: unset !important;
+}

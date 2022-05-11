@@ -1,0 +1,63 @@
+@import "/src/theme/variables.scss";
+@import "/src/theme/color.scss";
+
+.inspection {
+  .title {
+    color: $primary-color;
+    text-align: center;
+    font-weight: bold;
+  }
+  .text {
+    margin-left: 45px;
+    color: $light-gray !important;
+    @include font-size18();
+  }
+  .Header {
+    border-bottom: 1px solid $primary-color !important;
+    background-color: #fff !important;
+    padding: 1.25rem 1.25rem !important;
+    color: $primary-color;
+    font-weight: bold;
+    @include font-size20();
+  }
+
+  .labell {
+    @include font-size18();
+  }
+
+  .loginBtn {
+    background-color: $primary-color !important;
+    color: white;
+    border-color: $primary-color !important;
+    border-radius: 25px !important;
+    align-items: flex-end;
+    box-shadow: none;
+    height: 45px;
+    width: 25%;
+    font-size: 20px;
+    &:hover {
+      color: $primary-color !important;
+      border-color: $primary-color !important;
+      border-radius: 15px;
+      background-color: #fff !important;
+    }
+  }
+
+  .form-check-input:checked {
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+
+  .card {
+    border: 1px solid #88888814;
+    box-shadow: 2px 1px #88888814;
+  }
+  @media only screen and (max-width: 900px) {
+    .bt-row {
+      justify-content: center !important;
+    }
+    .loginBtn {
+      width: 80%;
+    }
+  }
+}

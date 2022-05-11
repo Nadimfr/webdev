@@ -1,0 +1,320 @@
+@import "/src/theme/variables.scss";
+@import "/src/theme/color.scss";
+
+.my_orders {
+  //dropdown
+  // .css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
+  //   .MuiOutlinedInput-notchedOutline {
+  //   border-color: $primary-color !important;
+  // }
+  //nothing
+  //   .css-1z7n62 {
+  //     color: $primary-color !important;
+  //   }
+  //dropdown
+  //   legend {
+  //     color: $primary-color !important;
+  //     span {
+  //       color: $primary-color !important   ;
+  //     }
+  //   }
+  //dropdown
+  //   .css-1kty9di-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  //     color: $primary-color !important;
+  //     @media only screen and (max-width: 900px) {
+  //       display: none;
+  //     }
+  //   }
+  //dropdown
+  //   .MuiAutocomplete-root.MuiAutocomplete-hasClearIcon {
+  //     margin-top: 9px;
+  //   }
+  //dropdown arrow
+  //   .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+  //     width: 24px !important;
+  //     height: 24px !important;
+  //     @media only screen and (max-width: 1500px) {
+  //       width: 22px !important;
+  //       height: 22px !important;
+  //     }
+  //     @media only screen and (max-width: 1300px) {
+  //       width: 20px !important;
+  //       height: 20px !important;
+  //     }
+  //     @media only screen and (max-width: 1000px) {
+  //       width: 18px !important;
+  //       height: 18px !important;
+  //     }
+  //     @media only screen and (max-width: 900px) {
+  //       width: 16px !important;
+  //       height: 16px !important;
+  //     }
+  //   }
+  @media only screen and (max-width: 900px) {
+    //dropdown filter by word
+    // .MuiAutocomplete-root.MuiAutocomplete-hasClearIcon.MuiAutocomplete-hasPopupIcon.css-viou3o-MuiAutocomplete-root {
+    //   label.MuiInputLabel-root.MuiInputLabel-formControl.MuiInputLabel-animated.MuiInputLabel-shrink.MuiInputLabel-outlined.MuiFormLabel-root.MuiFormLabel-colorPrimary.MuiFormLabel-filled.css-1kty9di-MuiFormLabel-root-MuiInputLabel-root {
+    //     display: none;
+    //   }
+    // }
+    //filter by size when empty
+    // .MuiInputLabel-root.MuiInputLabel-formControl {
+    //   @media only screen and (max-width: 1500px) {
+    //     font-size: 16px;
+    //   }
+    //   @media only screen and (max-width: 1300px) {
+    //     font-size: 14px;
+    //   }
+    //   @media only screen and (max-width: 1000px) {
+    //     font-size: 12px;
+    //   }
+    //   @media only screen and (max-width: 900px) {
+    //     font-size: 10px;
+    //   }
+    // }
+  }
+  //nothing
+  //   .Mui-checked {
+  //     .MuiIconButton-label {
+  //       color: $primary-color;
+  //     }
+  //   }
+  //nothing
+  //   .MuiFormControl-root.MuiFormControl-fullWidth {
+  //     height: 100%;
+  //   }
+
+  //dropdown
+  //   .MuiOutlinedInput-input.MuiInputBase-input {
+  //     @media only screen and (max-width: 1500px) {
+  //       font-size: 16px;
+  //     }
+  //     @media only screen and (max-width: 1300px) {
+  //       font-size: 14px;
+  //     }
+  //     @media only screen and (max-width: 1000px) {
+  //       font-size: 12px;
+  //     }
+  //     @media only screen and (max-width: 900px) {
+  //       font-size: 10px;
+  //     }
+  //   }
+  width: calc(100% - 80px);
+  margin: auto;
+  .search_filter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    // .search {
+    //     flex-wrap: nowrap;
+    //     display: flex;
+    //     align-items: flex-end;
+    //     height: 56px;
+    //     width: 550px;
+    //     @media only screen and (max-width: 1500px) {
+    //         width: 450px;
+    //     }
+    //     @media only screen and (max-width: 1300px) {
+    //         width: 400px;
+    //     }
+    //     @media only screen and (max-width: 1000px) {
+    //         width: 350px;
+    //     }
+    //     @media only screen and (max-width: 900px) {
+    //         width: 250px;
+    //     }
+    //     @media only screen and (max-width: 600px) {
+    //         width: unset;
+    //     }
+    //     .search-icon {
+    //         border-bottom: 1px solid $primary-color;
+    //         height: 36px;
+    //         @media only screen and (max-width: 900px) {
+    //         height: 28px;
+    //         img {
+    //             width: 18px;
+    //         }
+    //         }
+    //     }
+    //     input {
+    //         width: 100%;
+    //         background-color: transparent;
+    //         color: $primary-color;
+    //         outline: none;
+    //         outline-style: none;
+    //         border-top: none;
+    //         border-left: none;
+    //         border-right: none;
+    //         border-bottom: solid $primary-color 1px;
+    //         padding: 3px 10px;
+    //         @media only screen and (max-width: 900px) {
+
+    //         font-style: normal;
+    //         font-weight: 300;
+    //         font-size: 12px;
+    //         line-height: 14px;
+    //         display: flex;
+    //         align-items: center;
+    //         }
+    //     }
+    // }
+    //arrow color
+    // .MuiButtonBase-root {
+    //   color: grey;
+    // }
+    // //dropdown
+    // .MuiAutocomplete-root {
+    //   @media only screen and (max-width: 900px) {
+    //     width: 200px;
+    //     fieldset {
+    //       border-top: none;
+    //       border-left: none;
+    //       border-right: none;
+    //       border-radius: 0;
+    //     }
+    //   }
+    //   .MuiOutlinedInput-root {
+    //     &:hover {
+    //       border: unset;
+    //     }
+    //     .css-1q60rmi-MuiAutocomplete-endAdornment {
+    //       top: calc(50% - 16px);
+    //     }
+    //   }
+    // }
+    //nothing
+    // .row {
+    //     display: none !important;
+    //   @media only screen and (min-width: 901px) {
+    //     display: none !important;
+    //   }
+    // }
+  }
+
+  .sale_number,
+  .date,
+  .price,
+  .status {
+    font-size: 14px !important;
+    line-height: 16px !important;
+  }
+  .sale_number {
+    flex: 2 !important;
+    color: $primary-color !important;
+  }
+  .date {
+    color: $grey !important;
+  }
+  .price {
+    color: $black !important;
+  }
+  .status {
+    color: $black !important;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .order_description {
+    padding-right: 129px !important;
+    background: $white;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px 0px 15px 60px;
+    display: flex;
+
+    .product_description {
+      display: flex;
+      flex-direction: column;
+      margin-left: 90px;
+      .product_name {
+        font-style: normal;
+        font-weight: 500;
+        @include font-size20();
+        display: flex;
+        align-items: center;
+        color: $black;
+      }
+      .product_properties {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px !important;
+        display: flex;
+        align-items: center;
+        color: $black;
+      }
+      .product_price {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px !important;
+        display: flex;
+        align-items: center;
+        color: $primary-color;
+      }
+      .product_status {
+        font-style: normal;
+
+        font-size: 18px !important;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        color: $black;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .order_description {
+    width: 100%;
+    background: $white;
+    border: 0.5px solid $darkwhite;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 13px 0px 13px 28px;
+
+    display: flex;
+    img {
+      width: 30px;
+      height: 58px;
+    }
+    .product_description {
+      display: flex;
+      flex-direction: column;
+      margin-left: 35px;
+      .product_name {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        color: $black;
+      }
+      .product_properties {
+        margin-top: 6.5px;
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 8px;
+        line-height: 9px;
+        display: flex;
+        align-items: center;
+        color: $black;
+      }
+      .product_price {
+        margin-top: 6.5px;
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        display: flex;
+        align-items: center;
+        color: $primary-color;
+      }
+      .product_status {
+        display: none;
+      }
+    }
+  }
+}

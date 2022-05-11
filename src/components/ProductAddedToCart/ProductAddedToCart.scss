@@ -1,0 +1,251 @@
+@import "/src/theme/variables.scss";
+@import "/src/theme/color.scss";
+.product_added_to_card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: $white;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  max-width: 1100px;
+  width: calc(100% - 40px);
+  margin: 0;
+  margin: auto;
+  padding: 50px 144px;
+  @media only screen and (max-width: 900px) {
+    padding: unset;
+    box-shadow: unset;
+  }
+  .title {
+    @media only screen and (max-width: 900px) {
+      display: flex;
+      justify-content: center;
+    }
+
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 36px;
+    text-align: left;
+    color: $primary-color;
+    @media only screen and (max-width: 1500px) {
+      font-size: 36px;
+    }
+    @media only screen and (max-width: 1300px) {
+      font-size: 32px;
+    }
+    @media only screen and (max-width: 1000px) {
+      font-size: 22px;
+    }
+    @media only screen and (max-width: 900px) {
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+      color: $primary-color;
+    }
+  }
+  .product_card {
+    background: $white;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 18px 0px 34px 98px;
+    margin-top: 48px;
+    @media only screen and (max-width: 1500px) {
+      margin-top: 40px;
+    }
+    @media only screen and (max-width: 1300px) {
+      margin-top: 32px;
+    }
+    @media only screen and (max-width: 1000px) {
+      margin-top: 22px;
+    }
+    @media only screen and (max-width: 900px) {
+      margin-top: 18px;
+    }
+    @media only screen and (max-width: 600px) {
+      padding: 18px 0px 34px 40px;
+    }
+    .product {
+      padding-top: 13px;
+    }
+    .card_content {
+      display: flex;
+      flex-direction: column;
+      float: right;
+      width: calc(100% - 106px);
+      .card_header {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 20px;
+        .open_box {
+          // position: absolute;
+          background: $light-grey;
+          border-radius: 5px;
+
+          font-size: 16px;
+          @media only screen and (max-width: 600px) {
+            font-size: 12px;
+          }
+          line-height: 19px;
+          align-items: center;
+          text-align: center;
+
+          color: $white;
+          padding: 3.5px 6px;
+          height: fit-content;
+        }
+      }
+      .card_description {
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        .product_name {
+          font-weight: 500;
+          font-size: 30px;
+          line-height: 35px;
+          display: flex;
+          align-items: center;
+
+          color: $black;
+        }
+        .product_properties {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 21px;
+          /* identical to box height */
+
+          display: flex;
+          align-items: center;
+
+          color: $black;
+          margin-top: 17px;
+        }
+        .product_price {
+          font-weight: 500;
+          font-size: 22px;
+          line-height: 28px;
+          display: flex;
+          align-items: center;
+
+          color: $primary-color;
+          margin-top: 17px;
+        }
+        .product_name {
+          font-size: 24px;
+          @media only screen and (max-width: 500px) {
+            font-size: 20px;
+          }
+          @media only screen and (max-width: 450px) {
+            font-size: 18px;
+          }
+          @media only screen and (max-width: 400px) {
+            font-size: 16px;
+          }
+          @media only screen and (max-width: 350px) {
+            font-size: 14px;
+          }
+        }
+        .product_properties {
+          font-size: 22px;
+          @media only screen and (max-width: 500px) {
+            font-size: 18px;
+          }
+          @media only screen and (max-width: 450px) {
+            font-size: 14px;
+          }
+          @media only screen and (max-width: 400px) {
+            font-size: 12px;
+          }
+          @media only screen and (max-width: 350px) {
+            font-size: 12px;
+          }
+        }
+        .product_price {
+          font-size: 22px;
+          @media only screen and (max-width: 500px) {
+            font-size: 18px;
+          }
+          @media only screen and (max-width: 450px) {
+            font-size: 14px;
+          }
+          @media only screen and (max-width: 400px) {
+            font-size: 12px;
+          }
+          @media only screen and (max-width: 350px) {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .product_cart_buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 28px;
+    .continue_shopping {
+      cursor: pointer;
+      margin-right: 20px;
+      margin-left: 20px;
+      flex: 1;
+      min-width: 250px;
+      width: 300px;
+      height: 63px;
+      border: 1px solid $primary-color;
+      box-sizing: border-box;
+      border-radius: 50px;
+
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 33px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: $primary-color;
+      justify-content: center;
+      margin-top: 10px;
+      @media only screen and (max-width: 900px) {
+        font-size: 22px;
+        width: 280px;
+      }
+      @media only screen and (max-width: 700px) {
+        font-size: 20px;
+        width: 260px;
+      }
+    }
+    .view_cart {
+      cursor: pointer;
+      margin-right: 20px;
+      margin-left: 20px;
+      flex: 1;
+      min-width: 250px;
+      width: 300px;
+      height: 63px;
+      background: $primary-color;
+      border-radius: 50px;
+
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 33px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: #ffffff;
+      justify-content: center;
+      margin-top: 10px;
+      @media only screen and (max-width: 900px) {
+        font-size: 22px;
+        width: 280px;
+      }
+      @media only screen and (max-width: 700px) {
+        font-size: 20px;
+        width: 260px;
+      }
+    }
+  }
+}

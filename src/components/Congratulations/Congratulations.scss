@@ -1,0 +1,110 @@
+@import "/src/theme/variables.scss";
+@import "/src/theme/color.scss";
+.congratulations {
+  padding: 0 20px;
+  .title {
+    font-size: 38px;
+    display: flex;
+    justify-content: center;
+    color: $primary-color;
+    @media only screen and (max-width: 1500px) {
+      font-size: 36px;
+    }
+    @media only screen and (max-width: 1300px) {
+      font-size: 32px;
+    }
+    @media only screen and (max-width: 1000px) {
+      font-size: 22px;
+    }
+    @media only screen and (max-width: 900px) {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+      color: $primary-color;
+    }
+  }
+  .order_details {
+    margin-top: 48px;
+    @media only screen and (max-width: 1500px) {
+      margin-top: 40px;
+    }
+    @media only screen and (max-width: 1300px) {
+      margin-top: 32px;
+    }
+    @media only screen and (max-width: 1000px) {
+      margin-top: 22px;
+    }
+    @media only screen and (max-width: 900px) {
+      margin-top: 18px;
+    }
+    width: 818px;
+    padding-bottom: 40px;
+    background: $white;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding: 0 5% 5%;
+
+    .order_details_title {
+      @include font-size24();
+      text-align: center;
+      color: #000000;
+      width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 3% 0%;
+      max-width: 100%;
+    }
+    .summary_title {
+      font-weight: 500;
+      @include font-size24();
+      line-height: 29px;
+      display: flex;
+      align-items: center;
+      color: #000000;
+      // padding-top: 30px;
+    }
+    .element.header {
+      // margin-top: 15px;
+      font-weight: 500;
+    }
+    .element {
+      background: $white;
+      box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 35px;
+      height: 70px;
+      align-items: center;
+      margin-bottom: 15px;
+
+      .column {
+        @include font-size24();
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+      }
+    }
+
+    .total {
+      margin-top: 15px;
+      padding: 0px 50px;
+      text-align: right;
+      font-weight: 500;
+      @include font-size24();
+      line-height: 33px;
+      color: #000000;
+    }
+  }
+}
+.bodyElement {
+  padding: 1% 0;
+  height: 30vh;
+  overflow: auto;
+}

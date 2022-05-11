@@ -1,0 +1,109 @@
+@import "/src/theme/variables.scss";
+@import "/src/theme/color.scss";
+.links {
+  display: flex;
+  justify-content: flex-start;
+  height: 70px;
+  @media only screen and (max-width: 1500px) {
+    height: 70px;
+  }
+  @media only screen and (max-width: 1300px) {
+    height: 60px;
+  }
+  @media only screen and (max-width: 1000px) {
+    height: 40px;
+  }
+  @media only screen and (max-width: 900px) {
+    height: 20px;
+  }
+  .span {
+    cursor: pointer;
+    height: fit-content;
+    margin: 0 10px;
+    
+  
+  
+    line-height: 33px;
+    color: black;
+    @include font-size24();
+  }
+  .span.active {
+    margin-left: unset;
+    
+  
+    font-weight: 500;
+    line-height: 33px;
+    color: $primary-color;
+    border-bottom: 2px solid $primary-color;
+  }
+  @media only screen and (max-width: 900px) {
+    .span {
+      
+    
+    
+      font-size: 14px;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
+
+      color: $black;
+    }
+    .span.active {
+      
+    
+    
+      font-size: 14px;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
+
+      color: $primary-color;
+    }
+  }
+}
+
+.full_name {
+  
+
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 56px;
+  color: $primary-color;
+  margin-bottom: 50px;
+  @media only screen and (max-width: 1500px) {
+    font-size: 36px;
+  }
+  @media only screen and (max-width: 1300px) {
+    font-size: 32px;
+  }
+  @media only screen and (max-width: 1000px) {
+    font-size: 22px;
+  }
+  @media only screen and (max-width: 900px) {
+    
+  
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: $primary-color;
+  }
+}
+
+.main {
+  padding-top: 50px;
+  @media only screen and (max-width: 1500px) {
+    padding-top: 50px;
+  }
+  @media only screen and (max-width: 1300px) {
+    padding-top: 40px;
+  }
+  @media only screen and (max-width: 1000px) {
+    padding-top: 30px;
+  }
+  @media only screen and (max-width: 900px) {
+    padding-top: 20px;
+  }
+}
+

@@ -1,0 +1,126 @@
+@import "/src/theme/color.scss";
+.list {
+  width: 100%;
+  margin: 0% auto;
+  max-width: 1700px;
+  .search,
+  .sort {
+    display: flex;
+    justify-content: right;
+    width: 90%;
+    margin: 0 auto 2%;
+    @media only screen and (max-width: 800px) {
+      margin: 2% auto;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .search {
+      .searchComponent {
+        width: 90%;
+        margin: 2% auto;
+      }
+    }
+  }
+  .listBody {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    @media only screen and (max-width: 800px) {
+      flex-direction: column;
+    }
+
+    .image {
+      z-index: 100;
+      cursor: pointer;
+      position: absolute;
+      top: -70px;
+      left: 5%;
+      @media only screen and (min-width: 800px) {
+        display: none;
+      }
+    }
+
+    .sideFilter {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      margin: 0;
+      float: left;
+      transform: translateX(0);
+      transition: transform 0.5s;
+      // max-height: 70vh;
+      // overflow: auto;
+      &::-webkit-scrollbar {
+        width: 5px !important;
+      }
+
+      @media only screen and (max-width: 800px) {
+        max-height: 70vh;
+        overflow: auto;
+        transition: max-height 0.5s;
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        float: unset;
+      }
+    }
+
+    .translateX {
+      transform: translateX(-100vh);
+      @media only screen and (max-width: 800px) {
+        max-height: 0;
+        transform: translateX(0);
+      }
+    }
+
+    .products {
+      display: flex;
+      width: 100%;
+      padding: 10px 2%;
+      column-gap: 5%;
+      row-gap: 50px;
+      flex-wrap: wrap;
+      // justify-content: flex-start;
+      // margin-left: 25%;
+      // overflow: auto;
+      // min-height: 1000px;
+      // transition: margin-left 0.5s;
+
+      @media only screen and (max-width: 800px) {
+        width: 90%;
+        margin: 0 auto !important;
+        justify-content: center;
+        height: fit-content;
+      }
+    }
+  }
+}
+
+.message {
+  display: flex;
+  margin: 15% auto;
+  color: lightgray;
+  text-align: center;
+  font-size: 50px;
+}
+.footer {
+  margin-top: 50px;
+}
+
+// .css-bll5gk-MuiAutocomplete-root {
+//   width: 200px !important;
+// }
+// .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+//   padding: 0 60px !important;
+// }
+.css-0 {
+  width: 90%;
+  margin: 0 auto;
+}
+.css-1869usk-MuiFormControl-root {
+  // min-width: 150px !important;
+  @media only screen and (max-width: 800px) {
+    width: 70% !important;
+  }
+}

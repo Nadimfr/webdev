@@ -1,0 +1,32 @@
+@import "/src/theme/color.scss";
+.min-max-filter {
+  display: flex;
+  justify-content: space-between;
+  .filter-value {
+    border: 0.5px solid #a8a8a8;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 74px;
+    height: fit-content;
+    padding: 5px 10px;
+    div {
+      color: $grey;
+      font-size: 11px;
+    }
+    input {
+      border: none;
+      outline: none;
+      width: 100%;
+      font-size: 11px;
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+    /* Firefox */
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+  }
+}

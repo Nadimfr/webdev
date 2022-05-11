@@ -1,0 +1,143 @@
+@import "/src/theme/variables.scss";
+@import "/src/theme/color.scss";
+
+svg {
+  transition-duration: 500ms;
+}
+
+.accordion.header {
+  @media only screen and (max-width: 900px) {
+    display: none;
+  }
+}
+.accordion {
+  margin: 20px auto 0;
+  left: 100px;
+  top: 483.46px;
+  background: $white;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  .accordion_list_wrapper {
+    position: relative;
+    @media only screen and (max-width: 900px) {
+      justify-content: space-between;
+      display: flex;
+    }
+  }
+  .accordion_list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 35px;
+    white-space: nowrap;
+    @media only screen and (max-width: 900px) {
+      padding: 0;
+    }
+    span {
+      @include font-size20();
+      padding: 5px 0;
+      @media only screen and (min-width: 901px) {
+        white-space: nowrap;
+        text-align: left;
+        flex: 1;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+        display: flex;
+        color: $blue;
+      }
+    }
+    span.header-title {
+      display: flex;
+      gap: 10px;
+      @include font-size22();
+      color: $primary-color;
+    }
+    span.header-title-1 {
+      display: flex;
+      gap: 10px;
+      margin-right: 15px;
+      @include font-size22();
+      color: $primary-color;
+    }
+  }
+  .accordion_list.list1 {
+    flex-direction: column;
+    @media only screen and (max-width: 900px) {
+      position: absolute;
+      width: fit-content;
+    }
+    @media only screen and (min-width: 901px) {
+      display: none;
+    }
+  }
+  .accordion_list.list2 {
+    position: relative;
+    @media only screen and (max-width: 900px) {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    a {
+      text-decoration: none;
+      color: $blue;
+      z-index: 20;
+    }
+    .first_cell {
+      background-color: white;
+      margin-right: 20px;
+      @media only screen and (max-width: 900px) {
+        margin-right: 0px;
+      }
+      .svgMobile {
+        width: 35px;
+        height: 35px;
+        @media only screen and (max-width: 900px) {
+          display: none !important;
+        }
+      }
+      .svgStar {
+        margin-right: 10px;
+        img {
+          width: 15px;
+          height: 15px;
+          vertical-align: top;
+          @media only screen and (max-width: 900px) {
+            display: none !important;
+          }
+        }
+      }
+    }
+
+    .arrow {
+      position: absolute;
+      right: 2%;
+      margin: 5px;
+      @media only screen and (max-width: 900px) {
+        bottom: 5%;
+        right: 50%;
+      }
+    }
+  }
+  .accordion-opened {
+    svg {
+      transform: rotate(180deg);
+      transition-duration: 500ms;
+    }
+  }
+  .Collapsible {
+    width: 100%;
+    position: relative;
+    @media only screen and (max-width: 900px) {
+      justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+      padding: 15px 35px;
+    }
+  }
+  .Collapsible__trigger {
+    width: 100%;
+  }
+}

@@ -1,0 +1,30 @@
+@import "/src/theme/variables.scss";
+@import "/src/theme/color.scss";
+@import "/src/theme/form.scss";
+@import "/src/theme/button.scss";
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+body {
+  padding: 0 !important;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  a {
+    text-decoration: none;
+    color: white;
+    &:hover {
+      color: unset;
+    }
+  }
+  width: 100vw;
+  overflow-x: hidden;
+  // @media only screen and (max-width: 450px) {
+  //   font-size: 14px;
+  // }
+  // @media only screen and (max-width: 400px) {
+  //   font-size: 12px;
+  // }
+  // @media only screen and (max-width: 350px) {
+  //   font-size: 12px;
+  // }
+}

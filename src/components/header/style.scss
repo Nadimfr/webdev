@@ -1,0 +1,216 @@
+@import "/src/theme/color.scss";
+
+.main-container {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000 !important;
+  height: 8vh;
+  min-height: 45px;
+  background-color: white;
+  box-shadow: 0px 1px 10px 0px $primary-color-opacity;
+  align-items: center;
+
+  .linkk {
+    color: $primary-color;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .notification {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .icon {
+      display: flex;
+      justify-content: center;
+      border: none !important;
+    }
+    .icon:hover {
+      svg path {
+        fill: black;
+      }
+    }
+    .box2 {
+      position: fixed;
+      background: #ffffff;
+      box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      width: 300px;
+      // font: normal 400 15px/24px roboto;
+      margin: 50px auto;
+      z-index: 100;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0.2s, opacity 0.2s linear;
+      .view {
+        color: $primary-color;
+        // font: normal 500 18px/24px roboto;
+        margin: 10px auto;
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
+      }
+      .head {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: $primary-color;
+        padding: 3% 10%;
+        p:nth-child(1) {
+          // font: normal 500 18px/24px roboto;
+          font-size: 20px;
+          margin: auto 0;
+        }
+        p:nth-child(2) {
+          font-size: 12px;
+
+          // font: normal 500 10px/24px roboto;
+          margin: auto 0;
+        }
+      }
+      div:nth-child(3) {
+        border-top: none;
+      }
+      .col {
+        border-top: rgba(168, 168, 168, 1) 1px solid;
+        border-bottom: rgba(168, 168, 168, 1) 0.1px solid;
+        border-left: white 3px solid;
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        color: gray;
+        div {
+          // font: normal 400 16px/24px roboto;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin: auto 0;
+          color: gray;
+          p {
+            margin: auto 0;
+          }
+        }
+        .time {
+          // font: normal 400 14px/24px roboto;
+          font-size: 12px;
+          margin: auto 0;
+          color: gray;
+          text-align: left;
+        }
+      }
+
+      .col:hover {
+        border-left: 3px solid $primary-color;
+        div {
+          svg path {
+            fill: $primary-color;
+          }
+        }
+
+        div {
+          color: black;
+        }
+        .time {
+          color: black;
+        }
+      }
+    }
+    .box2:hover {
+      box-shadow: 0px 1px 10px 0px gray;
+    }
+  }
+  .sellnow {
+    color: #041c3f;
+    cursor: pointer;
+  }
+  .log {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    .icon {
+      border: none !important;
+      &:hover {
+        svg path {
+          fill: black;
+        }
+      }
+    }
+
+    .box {
+      position: fixed;
+      background: #ffffff;
+      box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      width: 200px;
+      // font: normal 400 20px/24px roboto;
+      margin: 50px auto;
+      z-index: 100;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0.2s, opacity 0.2s linear;
+
+      div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10%;
+        padding: 3% 0%;
+        margin-left: 5%;
+        .btn-primary {
+          background-color: white;
+          color: black;
+          border: unset;
+          padding: 3% 0%;
+        }
+        .btn-primary:focus {
+          outline: none;
+          border: unset;
+          box-shadow: unset;
+        }
+
+        p {
+          justify-content: start;
+          margin: auto 0;
+        }
+      }
+      div:nth-child(1) {
+        border-bottom: 1px solid rgba(168, 168, 168, 1);
+      }
+
+      a {
+        color: black;
+        text-decoration: none;
+
+        p {
+          display: flex;
+          margin: auto 0;
+        }
+      }
+    }
+  }
+  .logInLink {
+    color: $DarK-Primary;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+@media only screen and (min-width: 600px) {
+  .mobile {
+    display: none !important;
+  }
+  .web {
+    display: flex !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .web {
+    display: none !important;
+  }
+  .mobile {
+    display: block !important;
+  }
+}

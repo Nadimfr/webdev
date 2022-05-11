@@ -1,0 +1,124 @@
+@import "/src/theme/variables.scss";
+@import "/src/theme/color.scss";
+
+.your_sales {
+  margin: 2% 5%;
+  .title_wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    .title {
+      font-size: 26px;
+      font-weight: 500;
+      color: $primary-color;
+    }
+  }
+
+  .container1 {
+    display: flex;
+    align-items: flex-start;
+    .sub_container {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+
+      .product_container,
+      .payment_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        white-space: nowrap;
+        gap: 20px;
+        padding: 2% 2%;
+        margin-top: 5%;
+        height: auto;
+        background-color: white;
+        box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+
+        .device_details,
+        .payment_details {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          padding-left: 2%;
+          padding-right: 2%;
+
+          .detail_title {
+            font-size: 16px;
+            font-weight: 600;
+          }
+
+          .detail_specs {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .sub_container1 {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 80px;
+      .device_image {
+        width: 80%;
+      }
+
+      .back {
+        width: auto;
+        background-color: $primary-color;
+        border: 2px solid $primary-color;
+        padding: 1% 2%;
+        color: white;
+        font-weight: 600;
+        border-radius: 20px;
+      }
+
+      .back:hover {
+        cursor: pointer;
+        background-color: white;
+        border: 2px solid $primary-color;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .your_sales {
+    margin: 5% 5%;
+    .container1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .sub_container1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        margin-top: 10%;
+        width: 100%;
+
+        .back {
+          padding: 2% 5%;
+        }
+      }
+
+      .sub_container {
+        width: 100%;
+
+        .product_container {
+          padding: 5%;
+        }
+
+        .payment_container {
+          padding: 5%;
+        }
+      }
+    }
+  }
+}

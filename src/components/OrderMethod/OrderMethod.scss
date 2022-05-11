@@ -1,0 +1,233 @@
+@import "/src/theme/variables.scss";
+@import "/src/theme/color.scss";
+.order_method {
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // -ms-transform: translate(-50%, -50%);
+  // transform: translate(-50%, -50%);
+  margin: auto;
+  // width: fit-content;
+  max-width: 1080px;
+  padding: 0px 40px;
+  .title {
+    font-weight: 500;
+    font-size: 38px;
+    // line-height: 56px;
+
+    color: $primary-color;
+
+    @media only screen and (max-width: 1500px) {
+      font-size: 36px;
+    }
+    @media only screen and (max-width: 1300px) {
+      font-size: 32px;
+    }
+    @media only screen and (max-width: 1000px) {
+      font-size: 22px;
+    }
+    @media only screen and (max-width: 900px) {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+      color: $primary-color;
+    }
+  }
+  .order_details {
+    margin-top: 48px;
+    @media only screen and (max-width: 1500px) {
+      margin-top: 40px;
+    }
+    @media only screen and (max-width: 1300px) {
+      margin-top: 32px;
+    }
+    @media only screen and (max-width: 1000px) {
+      margin-top: 22px;
+    }
+    @media only screen and (max-width: 900px) {
+      margin-top: 18px;
+    }
+    // width: 1141.72px;
+    // height: 725px;
+    max-width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding-bottom: 45px;
+    .order_details_title {
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 40px;
+
+      padding: 20px 65px;
+      border-bottom: 2px solid $grey;
+      /* identical to box height */
+      color: $primary-color;
+      @media only screen and (max-width: 1500px) {
+        font-size: 28px;
+      }
+      @media only screen and (max-width: 1300px) {
+        font-size: 24px;
+      }
+      @media only screen and (max-width: 1000px) {
+        font-size: 20px;
+      }
+      @media only screen and (max-width: 900px) {
+        font-size: 16px;
+      }
+    }
+    .order_details_body {
+      .field {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0px 65px;
+        label.field-label {
+          @include font-size22();
+          line-height: 28px;
+          display: flex;
+          align-items: center;
+
+          color: #000000;
+        }
+        .MuiFormControl-root {
+          margin: 0px;
+        }
+      }
+      .field {
+        margin-top: 30px;
+        @media only screen and (max-width: 900px) {
+          width: 100%;
+        }
+        label {
+          @include font-size22();
+          line-height: 28px;
+          display: flex;
+          align-items: center;
+
+          color: #000000;
+        }
+        input {
+          // width: 600px;
+          // @media only screen and (max-width: 900px) {
+          //     width: 100%;
+          // }
+          width: 100%;
+
+          background-color: transparent;
+          outline: none;
+          outline-style: none;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          border-bottom: solid $black 1px;
+          // padding: 3px 10px;
+
+          font-weight: 300;
+          @include font-size24();
+          line-height: 33px;
+          /* identical to box height */
+
+          display: flex;
+          align-items: center;
+
+          // color: $border-grey
+        }
+      }
+      .country_postal-code_container {
+        align-items: end;
+        @media only screen and (max-width: 900px) {
+          flex-direction: column;
+        }
+      }
+    }
+    .shipping-cost {
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 65px;
+      margin-top: 20px;
+      .shipping-title {
+        font-weight: 500;
+        @include font-size22();
+        line-height: 26px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+
+        color: $primary-color;
+      }
+      .cost {
+        @include font-size22();
+        line-height: 26px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+
+        color: $primary-color;
+      }
+    }
+  }
+  .place_order {
+    width: 260px;
+    height: 54px;
+    text-align: right;
+    background: $primary-color;
+    border-radius: 50px;
+
+    font-weight: bold;
+    // @include font-size24();
+
+    line-height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: #ffffff;
+    float: right;
+    margin-top: 50px;
+    font-size: 20px !important;
+    @media only screen and (max-width: 1500px) {
+      width: 260px;
+      height: 54px;
+    }
+    @media only screen and (max-width: 1300px) {
+      width: 260px;
+      height: 54px;
+    }
+    @media only screen and (max-width: 1000px) {
+      width: 260px;
+      height: 54px;
+      font-size: 20px !important;
+    }
+
+    @media only screen and (max-width: 900px) {
+      font-size: 18px !important;
+      width: 220px;
+      height: 54px;
+      margin-top: 30px;
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+.MuiInput-root {
+  font-size: unset !important ;
+}
+.MuiInputLabel-root.Mui-focused {
+  color: $primary-color !important;
+}
+.MuiFormControl-root {
+  @include font-size22();
+}
+.grey-text {
+  .MuiSelect-select.MuiSelect-standard.MuiInput-input.MuiInputBase-input {
+    // color: #757575;
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,239 @@
+@import "/src/theme/color.scss";
+
+.Order_details {
+  margin: 2% 5%;
+  .Title {
+    font-size: 26px;
+    font-weight: 500;
+    color: $primary_color;
+    margin-bottom: 2%;
+  }
+
+  .Items_summary {
+    .First_row {
+      width: 100%;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      .Title {
+        white-space: nowrap;
+        font-size: 20px;
+        font-weight: 500;
+        color: $primary_color;
+      }
+      .Status {
+        width: 200px;
+        height: 35px;
+        border: 1px solid $primary_color;
+        border-radius: 5px;
+      }
+    }
+    .Table_titles {
+      padding: 0 10% 0 3%;
+      margin-bottom: 1%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 50px;
+      font-weight: 500;
+      box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+
+      .Column_title {
+        font-weight: 500;
+      }
+    }
+
+    .Results {
+      .Table_results {
+        padding: 0 10% 0 3%;
+        margin-bottom: 1%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  .Details_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    .Details {
+      width: 50%;
+      .Title {
+        margin-bottom: 2%;
+        margin-top: 10%;
+        white-space: nowrap;
+        font-size: 20px;
+        font-weight: 500;
+        color: $primary_color;
+      }
+      .Info {
+        padding: 2% 5%;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+        .Sub_row {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 2%;
+          font-size: 17px;
+          .Left {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .Summary {
+      width: 50%;
+      .Title {
+        margin-bottom: 2%;
+        margin-top: 10%;
+        white-space: nowrap;
+        font-size: 20px;
+        font-weight: 500;
+        color: $primary_color;
+      }
+      .Info {
+        padding: 2% 5%;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+        .Sub_row {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 2%;
+          font-size: 17px;
+          .Left {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+
+  .Delivery_row {
+    margin-top: 3%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 100px;
+    .Left_column {
+      width: 50%;
+      .Title {
+        white-space: nowrap;
+        font-size: 20px;
+        font-weight: 500;
+        color: $primary_color;
+      }
+      .Delivery_address {
+        .Info {
+          padding: 2% 5%;
+          box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+          .Sub_row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2%;
+            font-size: 17px;
+            .Left {
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+    .Total {
+      margin-top: 2.3%;
+      height: 30px;
+      width: 50%;
+      padding: 2%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+
+      .Total_title {
+        font-weight: 500;
+        color: $primary_color;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Order_details {
+    margin: 5% 5%;
+    .Items_summary {
+      .First_row {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .Status {
+          margin: 3% 0;
+          height: 30px;
+          width: 100%;
+        }
+      }
+
+      .Table_titles {
+        height: 30px;
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      .Results {
+        .Table_results {
+          height: 30px;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .Details_row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+
+      .Details {
+        width: 100%;
+        .Info {
+          .Sub_row {
+            font-size: 12px;
+          }
+        }
+      }
+      .Summary {
+        width: 100%;
+        .Info {
+          font-size: 12px;
+        }
+        .Title {
+          margin-top: 0;
+        }
+      }
+    }
+
+    .Delivery_row {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 50px;
+
+      .Left_column {
+        width: 100%;
+
+        .Info {
+          font-size: 12px;
+        }
+      }
+
+      .Total {
+        width: 100%;
+        font-size: 12px;
+      }
+    }
+  }
+}

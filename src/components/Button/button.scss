@@ -1,0 +1,62 @@
+@import "/src/theme/color.scss";
+
+.button {
+  display: flex;
+  min-width: 100px;
+  height: 40px;
+  justify-content: space-between;
+  border-radius: 50px;
+  align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 5%;
+  cursor: pointer;
+
+  @media only screen and (max-width: 500px) {
+    width: 90% !important;
+    margin: 5% auto 0;
+    height: 35px;
+  }
+  .svg {
+    width: 40px;
+  }
+  p {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+.default {
+  background-color: white;
+  color: $primary-color !important;
+  border: 1px solid $primary-color;
+  .svg path {
+    fill: $primary-color;
+  }
+}
+.default:hover {
+  background-color: $primary-color;
+  color: white !important;
+  border: 1px solid white;
+  .svg path {
+    fill: white;
+  }
+}
+.selected {
+  background-color: $primary-color;
+  color: white !important;
+  border: 1px solid white;
+}
+.selected:hover {
+  background-color: white;
+  color: $primary-color !important;
+  border: 1px solid $primary-color;
+  .svg path {
+    fill: $primary-color;
+  }
+}
+.none {
+  display: none;
+}

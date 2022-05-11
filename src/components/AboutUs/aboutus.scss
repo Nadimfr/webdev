@@ -1,0 +1,122 @@
+@import "/src/theme/color.scss";
+
+.About_us {
+  margin: 5% 10%;
+  .First_row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 100px;
+
+    .Left_column {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      .Title {
+        font-size: 24px;
+        font-weight: 500;
+        color: $primary_color;
+        margin-bottom: 5%;
+      }
+      .Text {
+        line-height: 30px;
+      }
+    }
+    .Image {
+      width: 50%;
+    }
+  }
+
+  .Second_row {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    .Left_column {
+      width: 50%;
+      .Title_wrap {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 5%;
+        .Title {
+          font-size: 24px;
+          color: $primary_color;
+        }
+
+        img {
+          width: 40px;
+        }
+      }
+      .Text {
+        line-height: 30px;
+      }
+    }
+    .Right_column {
+      width: 50%;
+      .Title_wrap {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 5%;
+        .Title {
+          font-size: 24px;
+          color: $primary_color;
+        }
+
+        img {
+          width: 40px;
+        }
+      }
+      .Text {
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .About_us {
+    .First_row {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+
+      .Left_column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .Title {
+          text-align: center;
+        }
+      }
+      .Image {
+        width: 100%;
+        margin-bottom: 10%;
+      }
+    }
+
+    .Second_row {
+      display: flex;
+      flex-direction: column;
+
+      .Left_column {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+      }
+
+      .Right_column {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+      }
+    }
+  }
+}

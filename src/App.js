@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import MainRoute from "./core/routes/routes";
+import React, { useState, useMemo, useEffect } from "react";
+import { AppContext } from "./AppContext";
 
 function App() {
+  const test = JSON.parse(sessionStorage.getItem("Products")) || [];
+  const [productId, setProductId] = useState(test);
+
+  const saveProductId = useMemo(
+    () => ({ productId, setProductId }),
+    [productId, setProductId]
+  );
+  console.log("Products Choosen:", productId);
+  sessionStorage.setItem("Products", JSON.stringify(productId));
+  // sessionStorage.setItem("ProductsId", JSON.stringify(productId.href));
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AppContext.Provider value={saveProductId}>
+        <MainRoute />
+      </AppContext.Provider>
+    </>
   );
 }
 

@@ -1,0 +1,208 @@
+@import "/src/theme/variables.scss";
+@import "/src/theme/color.scss";
+.personal_info {
+  .field {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+    @media only screen and (max-width: 1500px) {
+      margin-top: 28px;
+    }
+    @media only screen and (max-width: 1300px) {
+      margin-top: 25px;
+    }
+    @media only screen and (max-width: 1000px) {
+      margin-top: 22px;
+    }
+    @media only screen and (max-width: 900px) {
+      margin-top: 20px;
+    }
+    label {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      @include font-size24();
+      display: flex;
+      align-items: center;
+
+      color: #000000;
+      padding-bottom: 10px;
+      @media only screen and (max-width: 1500px) {
+        padding-bottom: 8px;
+      }
+      @media only screen and (max-width: 1300px) {
+        padding-bottom: 6px;
+      }
+      @media only screen and (max-width: 1000px) {
+        padding-bottom: 4px;
+      }
+      @media only screen and (max-width: 900px) {
+        padding-bottom: 2px;
+      }
+    }
+    input {
+      width: 100%;
+      @media only screen and (max-width: 900px) {
+        width: 100%;
+      }
+
+      background-color: transparent;
+      outline: none;
+      outline-style: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: solid $black 1px;
+      // padding: 3px 10px;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      @include font-size();
+      line-height: 33px;
+      /* identical to box height */
+
+      display: flex;
+      align-items: center;
+
+      // color: $border-grey;
+    }
+    // .MuiFormControl-root {
+    //   margin: 0px;
+    // }
+  }
+  .field.expiry_date {
+    width: 100%;
+    margin-left: 70px;
+    @media only screen and (max-width: 1500px) {
+      margin-left: 50px;
+    }
+    @media only screen and (max-width: 1300px) {
+      margin-left: 38px;
+    }
+    @media only screen and (max-width: 1000px) {
+      margin-left: 28px;
+    }
+    @media only screen and (max-width: 900px) {
+      margin-left: 22px;
+    }
+  }
+  .code_expiry-date {
+    display: flex;
+    justify-content: space-between;
+    // align-items: end;
+    .code {
+      input {
+        width: 200px;
+      }
+    }
+    .expiry_contact_number {
+      input {
+        width: 350px;
+      }
+    }
+    @media only screen and (max-width: 900px) {
+      width: 100%;
+      .field.code {
+        width: 30%;
+        label {
+          width: 100%;
+        }
+        input {
+          width: 100%;
+        }
+      }
+      .field.expiry_contact_number {
+        width: 60%;
+        label {
+          width: 100%;
+        }
+        input {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .enable-notification {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    @include font-size();
+    color: $black;
+    margin-top: 45px;
+    padding-bottom: 36px;
+    @media only screen and (max-width: 900px) {
+      padding-top: 20px;
+    }
+    @media only screen and (max-width: 1500px) {
+      margin-top: 35px;
+    }
+    @media only screen and (max-width: 1300px) {
+      margin-top: 28px;
+    }
+    @media only screen and (max-width: 1000px) {
+      margin-top: 20px;
+    }
+    @media only screen and (max-width: 900px) {
+      margin-top: 10px;
+    }
+  }
+
+  .submit {
+    cursor: pointer;
+    width: 25%;
+    float: right;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @media only screen and (max-width: 900px) {
+      padding-top: 20px;
+    }
+    span {
+      width: 300px;
+      height: 50px;
+      background: $primary-color;
+      border-radius: 50px;
+      font-weight: bold;
+      @include font-size24();
+      line-height: 33px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: $white;
+      margin-left: auto;
+      justify-content: center;
+
+      @media only screen and (max-width: 900px) {
+        margin: auto;
+        width: 200px !important;
+        height: 40px !important;
+      }
+      @media only screen and (max-width: 500px) {
+        width: 114px !important;
+        height: 24px !important;
+      }
+    }
+  }
+}
+// .MuiInput-root {
+//   font-size: unset !important ;
+// }
+// .MuiInputLabel-root.Mui-focused {
+//   color: $primary-color !important;
+// }
+// .MuiFormControl-root {
+//   @include font-size22();
+// }
+// .grey-text {
+//   .MuiSelect-select.MuiSelect-standard.MuiInput-input.MuiInputBase-input {
+//     // color: #757575;
+//     font-weight: 300;
+//   }
+// }
+
+// .MuiSwitch-switchBase.MuiSwitch-colorPrimary.MuiButtonBase-root.MuiSwitch-switchBase.MuiSwitch-colorPrimary.PrivateSwitchBase-root.Mui-checked.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase {
+//   padding: 8px !important;
+//   position: absolute !important;
+// }

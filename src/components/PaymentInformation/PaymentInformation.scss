@@ -1,0 +1,228 @@
+@import "/src/theme/variables.scss";
+@import "/src/theme/color.scss";
+.payment_information {
+  .title {
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 56px;
+
+    color: $primary-color;
+
+    @media only screen and (max-width: 1500px) {
+      font-size: 36px;
+    }
+    @media only screen and (max-width: 1300px) {
+      font-size: 32px;
+    }
+    @media only screen and (max-width: 1000px) {
+      font-size: 22px;
+    }
+    @media only screen and (max-width: 900px) {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+      color: $primary-color;
+    }
+  }
+  .payment_body {
+    background: #ffffff;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 30px;
+    fieldset {
+      width: 100%;
+      .payment-type {
+        border-bottom: 1px solid $border-grey;
+
+        .menue-item {
+          border-bottom: 1px solid $border-grey;
+          padding-top: 30px;
+          padding-bottom: 20px;
+          .MuiFormControlLabel-root {
+            margin-left: 0px;
+            .Mui-checked ~ .MuiFormControlLabel-label {
+              color: $primary-color !important;
+            }
+            .MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1 {
+              @include font-size20();
+              line-height: 33px;
+
+              color: $grey;
+            }
+          }
+        }
+
+        .payment-fields-container {
+          padding: 0px 0px 20px 0px;
+          .payment-details-container {
+            padding: 0px 60px;
+            .payment-details {
+              .card-number_card-holder {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+              }
+              .cvc_expiry-date {
+                display: flex;
+                justify-content: space-between;
+                width: 600px;
+                .cvc {
+                  input {
+                    width: 200px;
+                  }
+                }
+                .expiry_date {
+                  input {
+                    width: 350px;
+                  }
+                }
+                @media only screen and (max-width: 900px) {
+                  width: 100%;
+                  .field.cvc {
+                    width: 30%;
+                    label {
+                      width: 100%;
+                    }
+                    input {
+                      width: 100%;
+                    }
+                  }
+                  .field.expiry_date {
+                    width: 60%;
+                    label {
+                      width: 100%;
+                    }
+                    input {
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+              .field {
+                margin-top: 30px;
+                @media only screen and (max-width: 900px) {
+                  width: 100%;
+                }
+                label {
+                  @include font-size24();
+                  line-height: 28px;
+                  display: flex;
+                  align-items: center;
+
+                  color: #000000;
+                  padding-bottom: 10px;
+                  @media only screen and (max-width: 1500px) {
+                    padding-bottom: 8px;
+                  }
+                  @media only screen and (max-width: 1300px) {
+                    padding-bottom: 6px;
+                  }
+                  @media only screen and (max-width: 1000px) {
+                    padding-bottom: 4px;
+                  }
+                  @media only screen and (max-width: 900px) {
+                    padding-bottom: 2px;
+                  }
+                }
+                input {
+                  width: 600px;
+                  @media only screen and (max-width: 900px) {
+                    width: 100%;
+                  }
+
+                  background-color: transparent;
+                  outline: none;
+                  outline-style: none;
+                  border-top: none;
+                  border-left: none;
+                  border-right: none;
+                  border-bottom: solid $black 1px;
+                  // padding: 3px 10px;
+
+                  font-weight: 300;
+                  @include font-size();
+                  line-height: 33px;
+                  /* identical to box height */
+
+                  display: flex;
+                  align-items: center;
+
+                  // color: $border-grey;
+                }
+              }
+            }
+          }
+        }
+        .save-card {
+          margin-left: 50px;
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+          .span {
+            @include font-size24();
+            line-height: 28px;
+            // display: flex;
+            align-items: center;
+
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+  .continue {
+    cursor: pointer;
+    width: 350px;
+    height: 62px;
+    text-align: right;
+    background: $primary-color;
+    border-radius: 50px;
+    border: none;
+
+    font-weight: bold;
+    @include font-size();
+    line-height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: #ffffff;
+    float: right;
+    margin-top: 50px;
+    @media only screen and (max-width: 1500px) {
+      width: 330px;
+      height: 60px;
+    }
+    @media only screen and (max-width: 1300px) {
+      width: 300px;
+      height: 60px;
+    }
+    @media only screen and (max-width: 1000px) {
+      width: 300px;
+      height: 60px;
+      font-size: 20px !important;
+    }
+
+    @media only screen and (max-width: 900px) {
+      width: 220px;
+      height: 50px;
+      margin-top: 30px;
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+// .MuiRadio-colorSecondary.Mui-checked {
+//   color: $primary-color !important;
+// }
+// .MuiRadio-colorSecondary.Mui-checked:hover {
+//   background-color: rgba(245, 0, 87, 0) !important;
+// }
+
+// .MuiIconButton-colorSecondary:hover {
+//   background-color: rgba(245, 0, 87, 0) !important;
+// }

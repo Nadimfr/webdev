@@ -1,0 +1,94 @@
+@import "/src/theme/color.scss";
+
+:root {
+  .footer1 {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin-top: 50px;
+
+    .subfooter1 {
+      margin: 0 10%;
+      padding: 1% 0;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+
+    .List1 {
+      padding: 1% 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      border-top: 1px solid grey;
+    }
+
+    p.title1 {
+      color: $primary-color;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    p:hover {
+      color: $primary-color;
+      text-decoration: underline;
+    }
+
+    .newsletter1 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+    }
+
+    .details31 {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      font-size: 16px;
+    }
+    a {
+      color: #000000 !important;
+    }
+
+    .letter {
+      width: 250px;
+      border: none;
+      border-bottom: solid 1px $primary-color;
+      &:focus {
+        outline: none;
+        color: $primary-color;
+      }
+    }
+
+    .btnSubscribe1 {
+      font-weight: 400 !important;
+      color: white;
+      height: 35px;
+      width: 170px;
+      background-color: $primary-color;
+      border: solid 1px $primary-color;
+      border-radius: 25px;
+      border-radius: 15px;
+    }
+
+    .btnSubscribe1:hover {
+      font-weight: 600 !important;
+      background-color: white;
+      color: $primary-color;
+      border: solid 3px $primary-color;
+    }
+
+    .txt1 {
+      text-decoration: none !important;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    .footer1 {
+      display: none;
+    }
+  }
+}

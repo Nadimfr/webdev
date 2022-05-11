@@ -1,0 +1,405 @@
+@import "../../theme/color.scss";
+
+.step4 {
+  width: 100%;
+  max-width: 1500px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  h1 {
+    width: 90%;
+    margin: 0% auto;
+    color: rgba(4, 28, 63, 1);
+  }
+  .Body_container {
+    width: 90%;
+    display: flex;
+    margin: 2% auto 0;
+    gap: 30px;
+    .Device_box {
+      height: 60vh;
+      min-height: 450px;
+      max-height: 700px;
+      width: 25%;
+      min-width: 225px;
+      box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2% 0;
+
+      .Box_title {
+        font-weight: 600;
+        text-align: center;
+        font-size: 22px;
+      }
+      img {
+        height: 40%;
+      }
+      .bottom {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2%;
+        margin: 0 auto;
+        padding: 5% 0 0;
+        border-top: 1px solid #9a9a9a;
+        .Row {
+          margin-top: 20px;
+          width: 90%;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          font-size: 16px;
+          font-weight: 600;
+          margin: 1% auto;
+        }
+        .Row-1 {
+          margin-top: 5px;
+          width: 90%;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          font-size: 14px;
+          font-weight: 500;
+          margin: 1% auto;
+        }
+      }
+    }
+
+    .Questions_box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 3% 5%;
+      height: 60vh;
+      min-height: 450px;
+      max-height: 700px;
+      width: 75%;
+      box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      .steps {
+        width: 100%;
+        height: 100%;
+        .Step {
+          width: 100%;
+          height: 15%;
+
+          svg {
+            width: 100%;
+
+            .circle-svg {
+              transition: fill 1s;
+              transition: r 1s;
+            }
+            .CB {
+              r: 35px;
+              @media only screen and (max-width: 800px) {
+                transform-origin: center;
+                transform-box: fill-box;
+                transform: scale(2);
+              }
+              @media only screen and (max-width: 500px) {
+                transform-origin: center;
+                transform-box: fill-box;
+                transform: scale(2.2);
+              }
+            }
+            .CS {
+              r: 24px;
+              @media only screen and (max-width: 800px) {
+                transform-origin: center;
+                transform-box: fill-box;
+                transform: scale(2);
+              }
+              @media only screen and (max-width: 500px) {
+                transform-origin: center;
+                transform-box: fill-box;
+                transform: scale(2.2);
+              }
+            }
+            .first {
+              @media only screen and (max-width: 800px) {
+                transform-origin: center;
+                transform-box: fill-box;
+                transform: scale(2) translateX(20px);
+              }
+              @media only screen and (max-width: 500px) {
+                transform-origin: center;
+                transform-box: fill-box;
+                transform: scale(2.2) translateX(20px);
+              }
+            }
+            .last {
+              @media only screen and (max-width: 800px) {
+                transform-origin: center;
+                transform-box: fill-box;
+                transform: scale(2) translateX(-20px);
+              }
+              @media only screen and (max-width: 500px) {
+                transform-origin: center;
+                transform-box: fill-box;
+                transform: scale(2.2) translateX(-20px);
+              }
+            }
+            .d {
+              transform: scale(1);
+              transition: transform $time;
+              @media only screen and (max-width: 800px) {
+                transform-origin: center;
+                transform-box: fill-box;
+                transform: scale(2);
+              }
+              @media only screen and (max-width: 500px) {
+                transform-origin: center;
+                transform-box: fill-box;
+                transform: scale(2.2);
+              }
+            }
+            .stroke {
+              transition: stroke 1s;
+            }
+            .animation {
+              stroke-dasharray: 0;
+              animation: dash 0.5s linear;
+              @keyframes dash {
+                to {
+                  stroke-dasharray: 10;
+
+                  stroke-dashoffset: 1000;
+                }
+              }
+            }
+          }
+        }
+        .QnA {
+          display: flex;
+          flex-direction: column;
+          height: 80%;
+          .Question {
+            font-weight: 600;
+          }
+          .Answers {
+            display: flex;
+            flex-direction: column;
+            margin: 5% 0;
+            height: 35vh;
+            overflow-x: auto;
+            gap: 10px;
+          }
+        }
+
+        .Buttons {
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+          justify-content: space-between;
+          height: 10%;
+          .Continue_btn {
+            float: right;
+            width: 30%;
+            border-radius: 20px;
+            padding: 5px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $primary_color;
+            color: white;
+            font-weight: 600;
+            border: 2px solid $primary_color;
+            margin: 0%;
+          }
+          .Continue_btn:hover {
+            font-weight: 600;
+            cursor: pointer;
+            color: $primary_color;
+            background-color: white;
+            border: 2px solid $primary_color;
+          }
+          .Back_btn {
+            float: right;
+            width: 30%;
+            border-radius: 20px;
+            padding: 5px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            color: $primary_color;
+            font-weight: 600;
+            border: 2px solid $primary_color;
+          }
+          .Back_btn:hover {
+            font-weight: 600;
+            cursor: pointer;
+            background-color: $primary_color;
+            border: 2px solid $primary_color;
+            color: white;
+          }
+        }
+      }
+      .Device_Estimated_Value_Box {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .header {
+          height: 15%;
+          h4 {
+            color: $primary_color;
+            font-size: 30px;
+            font-weight: 500;
+            margin: 0%;
+          }
+          p {
+            font-weight: 600;
+          }
+        }
+        .QA {
+          display: flex;
+          flex-direction: column;
+          height: 70%;
+          p {
+            font-weight: 600;
+            color: $primary_color;
+          }
+          .Answers {
+            height: 35vh;
+            overflow: auto;
+            .Row {
+              font-size: 17px;
+              margin-top: 10px;
+              padding-top: 10px;
+              border-top: 1px solid rgb(87, 86, 86);
+              color: rgb(87, 86, 86);
+              display: flex;
+              justify-content: space-between;
+            }
+          }
+        }
+        .Buttons {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 15%;
+
+          .Cancel_btn {
+            width: 30%;
+            border: 1px solid $primary_color;
+            background-color: white;
+            border-radius: 20px;
+            padding: 5px 80px;
+            a {
+              color: $primary_color;
+            }
+          }
+          .Sell_btn {
+            width: 30%;
+            background-color: $primary_color;
+            border: 1px solid $primary_color;
+            color: white;
+            border-radius: 20px;
+            padding: 5px 80px;
+          }
+
+          .Cancel_btn:hover {
+            cursor: pointer;
+            background-color: $primary_color;
+            border: 1px solid $primary_color;
+            color: white;
+            a {
+              color: white;
+            }
+          }
+          .Sell_btn:hover {
+            cursor: pointer;
+            border: 1px solid $primary_color;
+            background-color: white;
+            a {
+              color: $primary_color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .Condition {
+    display: flex;
+    flex-direction: row;
+  }
+  .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .step4 {
+    .Body_container {
+      display: flex;
+      flex-direction: column;
+      .Device_box {
+        width: 100%;
+        .Box_title {
+          font-size: 20px;
+        }
+      }
+      .Questions_box {
+        width: 100%;
+        height: 40vh;
+        margin-bottom: 5%;
+      }
+    }
+  }
+  .MuiRadio-colorSecondary.Mui-checked {
+    color: #4ba4f0 !important;
+  }
+  .MuiFormControlLabel-root {
+    margin-right: -2% !important;
+    margin-left: -10px !important;
+    padding: 0 !important;
+  }
+  .MuiButtonBase-root.MuiIconButton-root {
+    padding: 0%;
+  }
+
+  .MuiSvgIcon-root {
+    width: 70% !important;
+  }
+
+  .MuiTouchRipple-root {
+    position: unset !important;
+  }
+}
+.MuiRadio-colorSecondary.Mui-checked {
+  color: #4ba4f0 !important;
+}
+.MuiRadio-colorSecondary.Mui-checked:hover {
+  background-color: rgba(245, 0, 87, 0) !important;
+}
+.MuiIconButton-colorSecondary:hover {
+  background-color: rgba(245, 0, 87, 0) !important;
+}
+
+// .MuiFormControlLabel-root {
+//   margin-right: -2% !important;
+//   margin-left: -10px !important;
+//   padding: 0 !important;
+// }
+// .MuiButtonBase-root.MuiIconButton-root {
+//  // padding: 0%;
+// }
+
+// .MuiSvgIcon-root {
+//   width: 70% !important;
+// }

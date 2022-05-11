@@ -1,0 +1,32 @@
+@import "/src/theme/color.scss";
+
+:root {
+  .ContinueBtn {
+    background-color: $primary-color;
+    color: white;
+    border-color: $primary-color;
+    border-radius: 15px;
+  }
+
+  .ContinueBtn-outline {
+    color: $primary-color;
+    border-color: $primary-color;
+    border-radius: 15px;
+  }
+
+  .form-check-input:checked {
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+
+  .Code {
+    display: flex;
+    justify-content: end;
+    color: $grey;
+    text-decoration: none;
+    margin-bottom: 5px;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

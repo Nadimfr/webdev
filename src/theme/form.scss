@@ -1,0 +1,109 @@
+@import "/src/theme/color.scss";
+
+.form-control {
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-radius: 0px;
+  padding-left: 0px;
+  margin-right: -55px;
+  z-index: 1;
+  &:focus {
+    color: $black;
+    background-color: $white;
+    border-color: #ced4da;
+    outline: 0;
+    box-shadow: none;
+  }
+  &::placeholder {
+    margin-left: none !important;
+    padding: 0px;
+  }
+}
+
+.form-check-input:checked {
+  background-color: $primary-color;
+  border-color: $primary-color;
+}
+
+.Password {
+  display: flex;
+  justify-content: flex-end;
+  color: #041c3f;
+  text-decoration: none;
+  margin-bottom: 5px;
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.OrLogin {
+  color: $grey;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  &:before {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid #c4c4c4;
+    margin: auto;
+    margin-right: 10px;
+  }
+  &:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid #c4c4c4;
+    margin: auto;
+    margin-left: 10px;
+  }
+  &:hover {
+    color: $grey;
+  }
+}
+
+.icon {
+  border: 1px solid #0000001f;
+  border-radius: 50%;
+  padding: 1%;
+  margin: 5px;
+}
+
+.input-group-text {
+  background-color: transparent !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-color: transparent !important;
+  border-radius: 0px !important;
+  z-index: 50;
+}
+
+.form-select {
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-radius: 0px;
+  padding-left: 0px;
+}
+
+.form-control.is-invalid {
+  background-image: none !important;
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  background-image: none !important;
+}
+
+.form-control.is-invalid {
+  background-image: none !important;
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  background-image: none !important;
+}
+
+.card-body {
+  margin: 0px 5px;
+}
